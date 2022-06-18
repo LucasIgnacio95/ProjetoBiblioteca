@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0PqUy+XbEVUTPbEMzcipqCI2Kq6xuBUiMhadsE8rdcn80Wfackh/axC5cggaXMHzxp1L6WIGXpLebTZmy8ONlA==",
+  "dgSpecHash": "PFR8I7qnznD/RrRgWzQLfhPe4q67Zd37gVVcTdeFQullKadZrQ9a64fQmaxfaUwJ2mA5AoeYIIIgAiA2nwK5og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
+  "projectFilePath": "E:\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucca\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\lucca\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",

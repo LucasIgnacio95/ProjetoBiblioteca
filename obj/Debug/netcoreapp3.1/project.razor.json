@@ -14422,8 +14422,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\CadastroRealizado.cshtml",
+      "TargetPath": "Views\\Usuario\\CadastroRealizado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\NeedAdmin.cshtml",
+      "TargetPath": "Views\\Usuario\\NeedAdmin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\listaDeUsuarios.cshtml",
+      "TargetPath": "Views\\Usuario\\listaDeUsuarios.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14452,6 +14467,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\EditarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\EditarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -14462,8 +14482,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\RegistrarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\RegistrarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Views\\Usuario\\ExcluirUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\ExcluirUsuario.cshtml",
       "FileKind": "mvc"
     },
     {

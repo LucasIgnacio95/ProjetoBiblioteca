@@ -8,7 +8,7 @@ namespace Biblioteca.Controllers
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if(string.IsNullOrEmpty(HttpContext.Session.GetString("user")))
+            if(string.IsNullOrEmpty(HttpContext.Session.GetString("Usuario")))
             {
                 filterContext.HttpContext.Response.Redirect("/Home/Login");
             }

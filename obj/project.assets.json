@@ -850,11 +850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "E:\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "E:\\SENAC\\Atividade 1 Mantis\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\lucca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucca\\Desktop\\SENAC\\Atividade 1 Mantis\\Biblioteca\\obj\\",
+      "outputPath": "E:\\SENAC\\Atividade 1 Mantis\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucca\\AppData\\Roaming\\NuGet\\NuGet.Config"
