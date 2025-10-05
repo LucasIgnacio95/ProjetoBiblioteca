@@ -1,2 +1,9 @@
-<h1>ACESSO NEGADO!</h1>
-<h2>É necessário nível de acesso de Administrador para executar essa Ação</h2>
+@{
+    ViewData["Title"] = "Acesso Negado";
+}
+
+<div class="text-center">
+    <h1 class="display-4 text-danger">Acesso Negado</h1>
+    <p class="lead">Você não tem permissão de Administrador para acessar esta funcionalidade.</p>
+    <a href="/Home/Index" class="btn btn-primary">Voltar para a Página Inicial</a>
+</div>

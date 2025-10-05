@@ -13,15 +13,20 @@ namespace Biblioteca.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        // 1. Declare the service field
+        private readonly AutenticacaoService _autenticacaoService;
 
-        public HomeController(ILogger<HomeController> logger)
+        // 2. Add the service to the constructor
+        public HomeController(ILogger<HomeController> logger, AutenticacaoService autenticacaoService)
         {
             _logger = logger;
+            _autenticacaoService = autenticacaoService;
         }
 
         public IActionResult Index()
         {
-            Autenticacao.CheckLogin(this);
+            // 3. Use the service instance
+            _autenticacaoService.CheckLogin(this);
             return View();
         }
 
@@ -33,16 +38,15 @@ namespace Biblioteca.Controllers
         [HttpPost]
         public IActionResult Login(string login, string senha)
         {
-            if(Autenticacao.verificaLoginSenha(login, senha, this))
+            // 3. Use the service instance here as well
+            if(_autenticacaoService.verificaLoginSenha(login, senha, this))
             {
                 return RedirectToAction("index");
-                
             }
             else
             {
                 ViewData["Erro"] = "Senha inválida";
                 return View();
-              
             }
         }
 

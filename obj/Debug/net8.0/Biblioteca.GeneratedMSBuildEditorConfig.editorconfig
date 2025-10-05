@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Biblioteca
+build_property.RootNamespace = Biblioteca
+build_property.ProjectDir = C:\Users\lucca\OneDrive\Documentos\C#\Projetos C#\ProjetoBiblioteca-main\ProjetoBiblioteca-main\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lucca\OneDrive\Documentos\C#\Projetos C#\ProjetoBiblioteca-main\ProjetoBiblioteca-main
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Emprestimo/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb1xDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Emprestimo/Edicao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb1xFZGljYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Emprestimo/Listagem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzdGltb1xMaXN0YWdlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Livro/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Livro/Edicao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cRWRpY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Livro/Listagem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cTGlzdGFnZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Livro/_FormCadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9cX0Zvcm1DYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Shared/_CookieConsentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29raWVDb25zZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/CadastroRealizado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3Ryb1JlYWxpemFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/ExcluirUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFeGNsdWlyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/ListaDeUsuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMaXN0YURlVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/NeedAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xOZWVkQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/Usuario/RegistrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3RyYXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucca/OneDrive/Documentos/C\#/Projetos C\#/ProjetoBiblioteca-main/ProjetoBiblioteca-main/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

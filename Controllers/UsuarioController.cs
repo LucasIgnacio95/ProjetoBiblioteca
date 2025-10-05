@@ -1,79 +1,101 @@
-using Microsoft.AspNetCore.Mvc;
 using Biblioteca.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace Biblioteca.Controllers
 {
     public class UsuarioController : Controller
-
     {
-        // Lista -----------
-        public IActionResult listaDeUsuarios()
+        // 1. Declare os campos para os serviços necessários
+        private readonly UsuarioService _usuarioService;
+        private readonly AutenticacaoService _autenticacaoService;
+
+        // 2. Crie o construtor para receber os serviços
+        public UsuarioController(UsuarioService usuarioService, AutenticacaoService autenticacaoService)
         {
-            Autenticacao.CheckLogin(this);
-            Autenticacao.verificaSeUsuarioEAdmin(this);
-            return View(new UsuarioService().Listar());
+            _usuarioService = usuarioService;
+            _autenticacaoService = autenticacaoService;
+        }
+
+        // Lista -----------
+        public IActionResult ListaDeUsuarios()
+        {
+            // 3. Use as instâncias dos serviços
+            _autenticacaoService.CheckLogin(this);
+            _autenticacaoService.verificaSeUsuarioEAdmin(this);
+            return View(_usuarioService.Listar());
         }
 
         // Inserção --------
-
         public IActionResult RegistrarUsuario()
         {
-            Autenticacao.CheckLogin(this);
-            Autenticacao.verificaSeUsuarioEAdmin(this);
+            _autenticacaoService.CheckLogin(this);
+            _autenticacaoService.verificaSeUsuarioEAdmin(this);
             return View();
         }
 
         [HttpPost]
-
         public IActionResult RegistrarUsuario(Usuario novoUsuario)
         {
-            novoUsuario.Senha = Criptografo.TextoCriptografo(novoUsuario.Senha);
-            new UsuarioService().incluirUsuario(novoUsuario);
-            return RedirectToAction("CadastroRealizado");
+            // A criptografia já é feita dentro do incluirUsuario, para manter o padrão
+            _usuarioService.incluirUsuario(novoUsuario);
+            return RedirectToAction("CadastroRealizado"); // Redireciona para a lista
         }
 
         public IActionResult CadastroRealizado()
         {
+            {
+            _autenticacaoService.CheckLogin(this);
             return View();
+            }
         }
 
         // Edição ---------
         public IActionResult EditarUsuario(int id)
         {
-            Usuario u = new UsuarioService().Listar(id);
+            _autenticacaoService.CheckLogin(this);
+            _autenticacaoService.verificaSeUsuarioEAdmin(this);
+            Usuario? u = _usuarioService.Listar(id);
             return View(u);
         }
 
         [HttpPost]
-
         public IActionResult EditarUsuario(Usuario userEditado)
         {
-            new UsuarioService().editarUsuario(userEditado);
-            return RedirectToAction("ListaDeusuarios");
+            _usuarioService.editarUsuario(userEditado);
+            return RedirectToAction("ListaDeUsuarios");
         }
+        
         // Exclusão ---------
         public IActionResult ExcluirUsuario(int id)
         {
-            return View(new UsuarioService().Listar(id));
+            _autenticacaoService.CheckLogin(this);
+            _autenticacaoService.verificaSeUsuarioEAdmin(this);
+            return View(_usuarioService.Listar(id));
         }
+
         [HttpPost]
         public IActionResult ExcluirUsuario(string decisao, int id)
         {
             if (decisao == "EXCLUIR")
             {
-                ViewData["Mensagem"] = "Exclusão do usaurio" + new UsuarioService().Listar(id).Nome + "realizada exclusão";
-                new UsuarioService().excluirUsuario(id);
-                return ViewComponent("ListaDeUsuarios", new UsuarioService().Listar());
+                // Usa o serviço injetado para buscar o nome antes de excluir
+                string nomeUsuario = _usuarioService.Listar(id).Nome;
+                _usuarioService.excluirUsuario(id);
+
+                // Usa TempData para enviar a mensagem através do redirect
+                TempData["Mensagem"] = "Exclusão do usuário " + nomeUsuario + " realizada com sucesso!";
             }
             else
             {
-                ViewData["Mensagem"] = "Exclusão Cancelada";
-                return View("ListaDeUsuarios", new UsuarioService().Listar());
+                TempData["Mensagem"] = "Exclusão Cancelada.";
             }
+
+            // Redireciona o usuário para página de Listagem
+            return RedirectToAction("ListaDeUsuarios");
         }
 
-        // Funcões Extras ------
-
+        // Funções Extras ------
         public IActionResult Sair()
         {
             HttpContext.Session.Clear();
@@ -82,7 +104,7 @@ namespace Biblioteca.Controllers
 
         public IActionResult NeedAdmin()
         {
-            Autenticacao.CheckLogin(this);
+            _autenticacaoService.CheckLogin(this);
             return View();
         }
     }

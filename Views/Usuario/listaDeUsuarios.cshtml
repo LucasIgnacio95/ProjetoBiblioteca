@@ -1,7 +1,6 @@
 @model List<Usuario>
 <h1>Usuários cadastrados no sistema</h1>
 
-<p class="text-danger">@ViewData["mensangem"]</p>
 
 <table class="table">
     <thead>
@@ -34,3 +33,5 @@
 </table>
 
 <a href="RegistrarUsuario">Registrar novo usuário</a>
+
+<p class="text-danger">@TempData["Mensangem"]</p>

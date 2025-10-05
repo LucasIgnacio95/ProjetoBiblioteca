@@ -1,44 +1,55 @@
 using Biblioteca.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
 using System;
 
 namespace Biblioteca.Controllers
 {
-
     public class EmprestimoController : Controller
     {
+        // 1. Declare fields for ALL services needed
+        private readonly LivroService _livroService;
+        private readonly EmprestimoService _emprestimoService;
+        private readonly AutenticacaoService _autenticacaoService;
+
+        // 2. Create a constructor that receives all the services
+        public EmprestimoController(
+            LivroService livroService, 
+            EmprestimoService emprestimoService, 
+            AutenticacaoService autenticacaoService)
+        {
+            _livroService = livroService;
+            _emprestimoService = emprestimoService;
+            _autenticacaoService = autenticacaoService;
+        }
+
         public IActionResult Cadastro()
         {
-            Autenticacao.CheckLogin(this);
-            LivroService livroService = new LivroService();
-            EmprestimoService emprestimoService = new EmprestimoService();
+            // 3. Use the injected services
+            _autenticacaoService.CheckLogin(this);
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
-            cadModel.Livros = livroService.ListarTodos();
+            cadModel.Livros = _livroService.ListarDisponiveis(); // Use ListarDisponiveis for new loans
             return View(cadModel);
         }
 
         [HttpPost]
         public IActionResult Cadastro(CadEmprestimoViewModel viewModel)
         {
-            EmprestimoService emprestimoService = new EmprestimoService();
-
             if (viewModel.Emprestimo.Id == 0)
             {
-                emprestimoService.Inserir(viewModel.Emprestimo);
+                _emprestimoService.Inserir(viewModel.Emprestimo);
             }
             else
             {
-                emprestimoService.Atualizar(viewModel.Emprestimo);
+                _emprestimoService.Atualizar(viewModel.Emprestimo);
             }
             return RedirectToAction("Listagem");
         }
 
         public IActionResult Listagem(string tipoFiltro, string filtro)
         {
-            Autenticacao.CheckLogin(this); 
+            _autenticacaoService.CheckLogin(this); 
+            
             FiltrosEmprestimos objFiltro = null;
             if (!string.IsNullOrEmpty(filtro))
             {
@@ -46,18 +57,18 @@ namespace Biblioteca.Controllers
                 objFiltro.Filtro = filtro;
                 objFiltro.TipoFiltro = tipoFiltro;
             }
-            EmprestimoService emprestimoService = new EmprestimoService();
-            return View(emprestimoService.ListarTodos(objFiltro));
+
+            return View(_emprestimoService.ListarTodos(objFiltro));
         }
 
         public IActionResult Edicao(int id)
         {
-            LivroService livroService = new LivroService();
-            EmprestimoService em = new EmprestimoService();
-            Emprestimo e = em.ObterPorId(id);
+            _autenticacaoService.CheckLogin(this);
+
+            Emprestimo e = _emprestimoService.ObterPorId(id);
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
-            cadModel.Livros = livroService.ListarTodos();
+            cadModel.Livros = _livroService.ListarTodos(); // For editing, showing all books is fine
             cadModel.Emprestimo = e;
 
             return View(cadModel);
